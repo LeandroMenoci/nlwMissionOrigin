@@ -1,3 +1,5 @@
+import Swiper from 'swiper';
+
 // abre e fecha o menu quando clicar no icone: hamburguer e x
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
@@ -41,13 +43,22 @@ const swiper = new Swiper(".swiper-container", {
   pagination: {
     el: '.swiper-pagination'
   },
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
   mousewheel: true,
-  keyboard: true
+  keyboard: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
 });
+
+// const swiper = new Swiper(".mySwiper", {
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+// });
+
 
 // ScrollReveal: Mostrar elementos quando der scroll na página
 const scrollReveal = ScrollReveal({
