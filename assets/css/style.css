@@ -22,7 +22,7 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 675;
+  --hue: 678;
   /* HSL color mode*/
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
@@ -31,14 +31,13 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
-  
-  /*========= Fonts ========*/
-    --title-font-size: 1.875rem;
-    --subtitle-font-size: 1rem;
-    --title-font: 'Poppins', sans-serif;
-    --body-font: 'DM Sans', sans-serif;
-}
 
+  /*========= Fonts ========*/
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+  --title-font: "Poppins", sans-serif;
+  --body-font: "DM Sans", sans-serif;
+}
 
 /* ========= Base ================== */
 html {
@@ -67,7 +66,7 @@ body {
   padding: 0 2rem;
   border-radius: 0.25rem;
   font: 500 1rem (--body-font);
-  transition: background .3s;
+  transition: background 0.3s;
 }
 
 .button:hover {
@@ -76,20 +75,12 @@ body {
 
 .divider-1 {
   height: 1px;
-  background: linear-gradient(
-    270deg,
-    hsla(var(--hue), 36%, 57%, 1),
-    hsla(var(--hue), 65%, 88%, 0.34)
-  );
+  background: linear-gradient(270deg, hsla(var(--hue), 36%, 57%, 1), hsla(var(--hue), 65%, 88%, 0.34));
 }
 
 .divider-2 {
   height: 1px;
-  background: linear-gradient(
-    270deg,
-    hsla(var(--hue), 65%, 88%, 0.34),
-    hsla(var(--hue), 36%, 57%, 1)
-  );
+  background: linear-gradient(270deg, hsla(var(--hue), 65%, 88%, 0.34), hsla(var(--hue), 36%, 57%, 1));
 }
 
 /* ========= Layout ================== */
@@ -139,8 +130,6 @@ body {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
 
-
-
 /* ========= Logo ================== */
 .logo {
   font: 700 1.31rem var(--title-font);
@@ -148,7 +137,7 @@ body {
 }
 
 .logo span {
-  color: var(--base-color)
+  color: var(--base-color);
 }
 
 .logo-alt span {
@@ -173,13 +162,13 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover, 
-nav ul li a.active{
+nav ul li a:hover,
+nav ul li a.active {
   color: var(--base-color);
- }
+}
 
 nav ul li a::after {
-  content: '';
+  content: "";
   width: 0%;
   height: 2px;
   background: var(--base-color);
@@ -198,7 +187,7 @@ nav .menu {
   opacity: 0;
   visibility: hidden;
   top: -20rem;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 nav .menu ul {
@@ -241,7 +230,7 @@ nav .icon-close {
   position: absolute;
   top: -1.5rem;
   right: 1.5rem;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 nav.show div.icon-close {
@@ -264,7 +253,7 @@ nav.show div.icon-close {
 }
 
 #home .image::before {
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   background: var(--base-color-second);
@@ -276,7 +265,7 @@ nav.show div.icon-close {
 
 #home .image img {
   position: relative;
-  right: 2.93rem; 
+  right: 2.93rem;
 }
 
 #home .image img,
@@ -298,7 +287,6 @@ nav.show div.icon-close {
   margin-bottom: 2rem;
 }
 
-
 /* ========= About ================== */
 #about {
   background: white;
@@ -314,7 +302,7 @@ nav.show div.icon-close {
 }
 
 #about .image::before {
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   background: var(--base-color-second);
@@ -347,7 +335,7 @@ nav.show div.icon-close {
   padding: 3.625rem 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-bottom: 0.25rem solid var(--base-color);
-  border-radius: 0.25rem .25rem 0 0;
+  border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
 }
 
@@ -371,7 +359,6 @@ nav.show div.icon-close {
 #testimonials .container {
   margin-left: 0;
   margin-right: 0;
-  
 }
 
 #testimonials header {
@@ -411,7 +398,7 @@ nav.show div.icon-close {
   height: 2rem;
   object-fit: cover;
   clip-path: circle();
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 /* ========= Swiper ================== */
@@ -441,7 +428,7 @@ nav.show div.icon-close {
 #contact .button i,
 #contact ul li i {
   font-size: 1.5rem;
-  margin-right: .625rem;
+  margin-right: 0.625rem;
 }
 
 #contact ul.grid {
@@ -473,7 +460,7 @@ footer .logo {
 
 footer .brand p {
   color: var(--text-color-light);
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 footer i {
@@ -486,8 +473,8 @@ footer .social {
   width: fit-content;
 }
 
-footer .social a{
-  transition: .3s;
+footer .social a {
+  transition: 0.3s;
   display: inline-block;
 }
 
@@ -509,7 +496,7 @@ footer .social a:hover {
 
   visibility: hidden;
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
   transform: translateY(100%);
 }
 
@@ -518,7 +505,6 @@ footer .social a:hover {
   opacity: 1;
   transform: translateY(0%);
 }
-
 
 /* MEDIA QUERIES*/
 /* extra large devices: 1200 > */
@@ -577,73 +563,71 @@ footer .social a:hover {
     margin-top: (--header-height);
   }
 
- /*  home  */
+  /*  home  */
 
- #home .container {
-   grid-auto-flow: column;
-   justify-content: space-between;
-   margin: 0 auto;
- }
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 
- #home .image {
-   order: 1;
- }
+  #home .image {
+    order: 1;
+  }
 
- #home .text {
-   order: 0;
-   max-width: 24rem;
-   text-align: left;
- }
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
 
- /* About */
+  /* About */
 
- #about .container {
-   grid-auto-flow: column;
-   margin: 0 auto;
- }
+  #about .container {
+    grid-auto-flow: column;
+    margin: 0 auto;
+  }
 
- /* Services */
- .cards {
-   grid-template-columns: 1fr 1fr 1fr;
- }
+  /* Services */
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
- .card {
-   padding-left: 3rem;
-   padding-right: 3rem;
- }
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 
- /* Testimonials */
- #testimonials .container {
-   margin-left: auto;
-   margin-right: auto;
- }
+  /* Testimonials */
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
- /* Contact */
+  /* Contact */
   #contact .container {
-  grid-auto-flow: column;
-  align-items: center;
+    grid-auto-flow: column;
+    align-items: center;
   }
 
   #contact .text {
-  max-width: 25rem;
+    max-width: 25rem;
   }
 
   /* footer */
   footer .section {
-  padding: 3.75rem 0;
+    padding: 3.75rem 0;
   }
 
   footer .container {
-  grid-auto-flow: column;
-  align-items: center;
-  justify-content: space-between;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
   }
 
   footer .logo {
     font-size: 2.25rem;
   }
-
-
 }
 
 /* large devices: 1023 > */
